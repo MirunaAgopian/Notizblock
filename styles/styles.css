@@ -1,0 +1,192 @@
+.add-note-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: flex-end;
+}
+
+
+.create-note-btn {
+    height: 50px;
+    width: 50px;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.write-note {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 40%;
+    height: 280px;
+    background-color: rgb(11, 54, 94);
+    border-radius: 16px;
+}
+
+.write-note input{
+    height: 30px;
+    color: black;
+    font-size: 16px;
+}
+
+.write-note textarea{
+    height: 130px;
+    max-height: 150px;
+    max-width: 100%;
+    resize: none;
+    color: black;
+    font-size: 16px;
+}
+
+.note-buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.note-btn {
+    padding: 8px 16px;
+    background-color: #ff953b;
+    text-transform: uppercase;
+}
+
+.note-btn:hover{
+    box-shadow: 0 0 6px 0 white;
+}
+
+
+.notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    max-width: 1440px;
+    margin-top: 40px;
+    z-index: 1;
+}
+
+.single-note-container {
+    background-color: #4e7ead;
+    border: 3px solid #0b365e;
+    width: 300px;
+    height: 350px;
+    border-radius: 8px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.single-note-container p {
+    width: 100%;
+    height: 80%;
+    word-wrap: break-word;
+    overflow: scroll;
+    margin-block-end: 8px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.note-date {
+    font-style: italic;
+    font-size: 12px;
+    text-align: right;
+    max-height: 20px;
+}
+
+.single-note-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2px 4px;
+}
+
+.single-note-buttons button {
+    background-color: #ff953b;
+    padding: 4px 6px;
+}
+
+.single-note-buttons button:hover{
+    box-shadow: 0 0 6px 0 white;
+}
+
+.pop-up {
+    background-color: rgba(255, 149, 59, 0.5);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    overflow: auto;
+}
+
+.edit-note-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4e7ead;
+    border: 3px solid #0b365e;
+    border-radius: 8px;
+    padding: 8px;
+    height: 370px;
+    max-height: 100%;
+    width: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-date{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    gap: 6px;
+}
+
+.edit-note-container input {
+    height: 24px;
+    color: black;
+    font-size: 16px;
+}
+
+.edit-note-container textarea {
+    height: 200px;
+    max-height: 230px;
+    min-height: 230px;
+    max-width: 100%;
+    min-width: 100%;
+    overflow: scroll;
+    color: black;
+    font-size: 16px;
+}
+
+/* Media queries */
+
+@media(max-width: 1000px) {
+   .write-note {
+    width: 60%;
+   }
+}
+
+
+@media(max-width: 550px) {
+   .write-note {
+    width: 80%;
+    margin-top: 16px;
+   }
+
+   .note-btn {
+    padding: 4px 8px;
+}
+}
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notizblock</title>
+    <link rel="icon" href="./assets/img/favicon.svg" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body onload="renderSavedNotes()">
+    <header>
+      <div class="header-content">
+        <div class="logo-container">
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="./assets/img/favicon.svg"
+              alt="Notizblock - Logo der Webseite"
+          /></a>
+          <p>Notizblock</p>
+        </div>
+        <nav>
+          <input class="search-bar" type="text" placeholder="Suchen" />
+          <div class="trash-archive">
+          <a href="archive.html"
+            ><img
+              class="navbar-icons"
+              src="./assets/img/archive.svg"
+              alt="Archiv"
+          /></a>
+          <a href="trash.html"
+            ><img
+              class="navbar-icons"
+              src="./assets/img/delete.svg"
+              alt="Papierkorb"
+          /></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main-content">
+        <h1>Notizblock</h1>
+        <section class="add-note-container">
+          <button class="note-btn-main">
+            <img
+              id="create_note"
+              class="create-note-btn"
+              src="./assets/img/add_note.svg"
+              alt="Knopf zum Erstellen von Notizen"
+            />
+          </button>
+          <div id="write_note" class="write-note d-none">
+            <h2>Erstelle eine Notiz</h2>
+            <input
+              id="note_title"
+              type="text"
+              placeholder="Titel"
+              name="title"
+              maxlength="50"
+            />
+            <textarea
+              id="note_text"
+              placeholder="Notiz erstellen"
+              name="note"
+              maxlength="5000"
+            ></textarea>
+            <div class="note-buttons">
+              <button id="save" class="note-btn" onclick="addNote()">
+                Speichern
+              </button>
+              <button id="close" class="note-btn">Abbrechen</button>
+            </div>
+          </div>
+        </section>
+        <section id="content" class="notes-container"></section>
+      </div>
+      <section id="modal" class="pop-up d-none">
+        <div id="editing_container"></div>
+      </section>
+    </main>
+    <footer>
+      <span>&copy; 2025 Miruna Agopian - alle Rechte vorbehalten</span>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/eventListeners.js"></script>
+  </body>
+</html>

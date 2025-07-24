@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notizblock</title>
+    <link rel="icon" href="./assets/img/favicon.svg" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body onload="renderArchivedContent()">
+ <header>
+      <div class="header-content">
+        <div class="logo-container">
+          <a href="index.html"
+            ><img
+              class="logo"
+              src="./assets/img/favicon.svg"
+              alt="Notizblock - Logo der Webseite"
+          /></a>
+          <p>Notizblock</p>
+        </div>
+        <nav>
+          <input class="search-bar" type="text" placeholder="Suchen" />
+          <div class="trash-archive">
+            <a href="archive.html"
+              ><img
+                class="navbar-icons"
+                src="./assets/img/archive.svg"
+                alt="Archiv"
+            /></a>
+            <a href="trash.html"
+              ><img
+                class="navbar-icons"
+                src="./assets/img/delete.svg"
+                alt="Papierkorb"
+            /></a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="main-content">
+        <h1>Archivierte Notizen</h1>
+          
+        <section id="archived_content" class="notes-container"></section>
+      </div>
+    </main>
+    <footer>
+      <span>&copy; 2025 Miruna Agopian - alle Rechte vorbehalten</span>
+    </footer>
+    <script src="scripts/archive.js"></script>
+  </body>
+</html>
