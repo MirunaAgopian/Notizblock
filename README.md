@@ -65,16 +65,15 @@ Notizblock/
 └── README.md
 </pre>
 
-🤝 Contributing
+### 🤝 Contributing
 Contributions are welcome! If you find a bug or want to suggest enhancements, feel free to open an issue or pull request.
 
-📄 License
+### 📄 License
 This project is licensed under the MIT License — see the LICENSE file for details.
 
-🙌 Acknowledgments
+### 🙌 Acknowledgments
 Inspired by classic productivity apps
 
 Built with love and curiosity by Miruna-Alexandra 💙
-
 
 If you want to add a visual preview, a project logo, or even embed a live demo link later on, I’d be thrilled to help you set that up too!
