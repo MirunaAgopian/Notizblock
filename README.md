@@ -30,7 +30,7 @@ _A sleek, browser-based note-taking app with localStorage for lightning-fast usa
 
 ### Installation
 
-```bash
+<pre>
 # Clone the repository
 git clone https://github.com/MirunaAgopian/Notizblock
 
@@ -63,6 +63,7 @@ Notizblock/
     └── trash_content.js
 ├── assets/
 └── README.md
+</pre>
 
 🤝 Contributing
 Contributions are welcome! If you find a bug or want to suggest enhancements, feel free to open an issue or pull request.
