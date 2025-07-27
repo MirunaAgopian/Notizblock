@@ -30,12 +30,16 @@ _A sleek, browser-based note-taking app with localStorage for lightning-fast usa
 
 ### Installation
 
-<pre>
+
 # Clone the repository
+<pre>
 git clone https://github.com/MirunaAgopian/Notizblock
+</pre>
 
 # Navigate into the project
+<pre>
 cd Notizblock
+</pre>
 
 🔧 Usage
 Simply open index.html in your browser and start taking notes. Your notes will be saved automatically in your browser via localStorage, so they’ll be there when you return.
@@ -48,6 +52,7 @@ Add, edit, archive, restore, and delete notes
 Refresh to verify localStorage persistence
 
 📁 Project Structure
+<pre>
 text
 Notizblock/
 ├── index.html
