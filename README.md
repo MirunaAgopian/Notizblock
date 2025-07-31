@@ -1,6 +1,6 @@
 # 📦 Notizblock
 
-_A sleek, browser-based note-taking app with localStorage for lightning-fast usability and seamless archiving._
+_A sleek, browser-based note-taking app with localStorage for fast usability and seamless archiving._
 
 ---
 
